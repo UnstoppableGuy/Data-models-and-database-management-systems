@@ -1,0 +1,8 @@
+USE StoreDb
+
+GO
+CREATE PROCEDURE DeleteImage
+	@ImageId UNIQUEIDENTIFIER
+AS
+	DELETE FROM ProductImage WHERE Id = @ImageId
+GO
